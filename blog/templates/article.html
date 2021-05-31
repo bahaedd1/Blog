@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<form method='POST' class="post-form ">
+	
+	{% csrf_token %}
+
+	<a href="bl" class="btn12 text-center azz btn ">Ajouter un Article</a>
+
+	<div class="container " >
+		<div class="row ">
+{% for article in list %}
+
+	  <div class="col-sm mt-5">
+<div class="card p-5 tests" style="width: 100%;">
+
+	<div class="card-body aaa" style="margin-left: 0px;">
+		<img src='/media/{{article.img}}' 
+		class="rounded float-start im" 
+		height="200px"
+		width="200px" 
+	  alt="" > <br> <br>
+	  <h5 class="card-title az" style="margin-left: 30px;"><a href="{{article.iduser.id}}">{{article.iduser.username}}</a>
+/		{{article.title}} </h5>
+	  <p style="margin-left: 5px;" class="">{{article.content}}</p>
+
+	 
+	</div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+
+</div>
+</form>
+{% endblock %}

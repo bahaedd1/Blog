@@ -1,0 +1,94 @@
+.bg {
+    background: url("image/aaa.jpg") no-repeat;
+    height: 100vh;
+  width: 250vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+  position: fixed;
+  opacity: 0.5;
+}
+.bg2{
+    background-color: #121212;
+    height: 100vh;
+  width: 250vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+  position: fixed;
+  opacity: 1;
+}
+.azz {
+    margin-left: 45%;
+    margin-top: 5%;
+}
+.aaa{
+    margin-left: 5px;
+    padding: 0 !important;
+}
+.im{
+    margin-left: 15%;
+}
+.az{
+    margin-left: 5px;
+}
+.zz{
+    line-break: strict;
+}
+.tests{
+    border-radius: 15px;
+    background-color: #292929;
+    color: white;
+}
+.btn12{
+    background: linear-gradient(162deg, rgba(0,148,134,1) 0%, rgba(3,218,198,1) 100%, rgba(34,35,94,1) 100%) !important;
+    color: aliceblue;
+    font-weight: bold;
+}
+.btn12:hover{
+    text-decoration: none;
+    color: white !important;
+}
+.btn4{
+    background: linear-gradient(to right, #cb2d3e, #ef473a);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none !important;
+}
+.btn4:hover{
+    text-decoration: none;
+    color: white !important;
+}
+.navcus{
+    background-color: #292929 !important;
+    color: white !important;
+}
+.navtex{
+    color: white !important;
+}
+.cat{
+    background: linear-gradient(162deg, rgba(0,148,134,1) 0%, rgba(3,218,198,1) 100%, rgba(34,35,94,1) 100%);
+    text-align: center;
+   width: 100%;
+   border-radius: 5px;
+   font-weight: 500;
+   
+
+}
+.testtt{
+    margin:15px !important;
+}
+.tex{
+    color: white;
+}
+label{
+    color: white  !important;
+}
+#iii{
+   background-color: blueviolet!important;
+}
+.azert{
+    background-color: #cb2d3e;
+}

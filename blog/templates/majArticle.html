@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}  
+    <div class="col-md-12 text-center">
+        <h2 class="tex">Nos Article</h2>
+    </div> 
+    <form method='POST' class="post-form pp card" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="sumit" class="btn btn12">Enregistrer</button>
+    </form>    
+{% endblock %}

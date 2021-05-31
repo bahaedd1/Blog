@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<form method='POST' class="post-form ">
+			<p class="bg-secondary text-white text-right ">
+				{{det.nom}}   <img src='/media/{{det.img}}' 
+				class="rounded-circle "
+				width="5%"
+				height="5%" 
+			 
+			  alt="" ></p>
+
+	{% csrf_token %}
+	{{profile}}
+	{% if profile == 'true'%}
+
+	<a href="bl" class="btn12 text-center azz btn ">Ajouter un Article</a>
+		{%endif%}
+	<div class="container " >
+		<div class="row ">
+{% for article in articles %}
+	  <div class="col-sm mt-5">
+<div class="card p-5 tests" style="width: 100%;">
+
+	<div class="card-body aaa" style="margin-left: 0px;">
+		<img src='/media/{{article.img}}' 
+		class="rounded float-start im" 
+		height="200px"
+		width="200px" 
+	  alt="" >
+	  <h5 class="card-title az" style="margin-left: 5px;">	{{article.title}} </h5>
+	  <p style="margin-left: 5px;" class="">{{article.content}}</p>
+
+	  <p class="card-text az cat"> {{article.date}}</p>
+      <p class="card-title az"></p>
+      {% if article.iduser.id == user.id%}
+  <a href="edit/{{article.id}}" class="btn az btn4"> Editer </a>
+      <a href="delete/{{article.id}}" class="btn az btn4"> Suprimer</a>
+      {%endif%}
+	</div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+
+</div>
+</form>
+{% endblock %}
